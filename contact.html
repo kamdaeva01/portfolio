@@ -77,7 +77,7 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
     <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
-            <header
+           <header
                 class="border-b border-gray-200/50 dark:border-gray-700/50 px-4 md:px-10 py-4 sticky top-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md z-50">
                 <div class="mx-auto flex max-w-7xl items-center justify-between">
                     <a class="flex items-center gap-3 text-gray-900 dark:text-white" href="#">
@@ -85,7 +85,7 @@
                         <span class="text-xl font-bold">Brice Wakap</span>
                     </a>
                     <nav class="hidden items-center gap-8 text-sm font-medium lg:flex">
-                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors "
                             href="index.html">Accueil</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="#about">À propos</a>
@@ -93,15 +93,33 @@
                             href="#">Services</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="#news">Actualités</a>
-                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors active "
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors active"
                             href="contact.html">Contact</a>
                     </nav>
+                    <!-- Menu mobile (caché par défaut) -->
+                    <div id="mobile-menu"
+                        class="lg:hidden hidden flex flex-col gap-6 mt-4 bg-white dark:bg-background-dark p-6 rounded-lg shadow-lg absolute top-full left-0 w-full overflow-x-auto whitespace-nowrap">
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors active"
+                            href="#">Accueil</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="#about">À propos</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="#">Services</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="#news">Actualités</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </div>
+
                     <div class="flex items-center gap-4">
                         <a class="hidden sm:inline-block btn btn-primary" href="contact.html">Prendre rendez-vous</a>
-                        <button
+                        <button id="menu-btn" class="lg:hidden text-gray-700 dark:text-gray-300 focus:outline-none">
+                            ☰
+                        </button>
+                        <!-- <button id="burger-menu"
                             class="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
                             <span class="material-symbols-outlined">menu</span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </header>
@@ -218,6 +236,15 @@
             </footer>
         </div>
     </div>
+     <!-- Script Menu -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 
 </body>
 

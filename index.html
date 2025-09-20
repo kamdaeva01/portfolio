@@ -74,6 +74,7 @@
   </style>
 </head>
 
+
 <body class="antialiased">
     <div class="flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
         <div class="flex h-full grow flex-col">
@@ -91,17 +92,35 @@
                             href="#about">À propos</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="#">Services</a>
-                            <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="#news">Actualités</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="contact.html">Contact</a>
                     </nav>
+                    <!-- Menu mobile (caché par défaut) -->
+                    <div id="mobile-menu"
+                        class="lg:hidden hidden flex flex-col gap-6 mt-4 bg-white dark:bg-background-dark p-6 rounded-lg shadow-lg absolute top-full left-0 w-full overflow-x-auto whitespace-nowrap">
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors active"
+                            href="#">Accueil</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="#about">À propos</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="#">Services</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="#news">Actualités</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
+                            href="contact.html">Contact</a>
+                    </div>
+
                     <div class="flex items-center gap-4">
                         <a class="hidden sm:inline-block btn btn-primary" href="contact.html">Prendre rendez-vous</a>
-                        <button
+                        <button id="menu-btn" class="lg:hidden text-gray-700 dark:text-gray-300 focus:outline-none">
+                            ☰
+                        </button>
+                        <!-- <button id="burger-menu"
                             class="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
                             <span class="material-symbols-outlined">menu</span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </header>
@@ -348,7 +367,15 @@
             </footer>
         </div>
     </div>
+    <!-- Script Menu -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
 
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
