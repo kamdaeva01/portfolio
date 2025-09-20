@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;family=Lato:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Brice Wakap - Avocate</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0a2463",
+                        secondary: "#e2e8f0",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Lato", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        body {
+      @apply bg-background-light dark:bg-background-dark font-body text-gray-700 dark:text-gray-300;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-display;
+    }
+    .btn {
+      @apply rounded-full px-8 py-3 text-base font-semibold shadow-md transition-transform duration-300 ease-in-out hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    }
+    .btn-primary {
+      @apply bg-primary text-white hover:bg-primary/90 focus-visible:outline-primary;
+    }
+    .btn-secondary {
+      @apply bg-white text-primary ring-1 ring-inset ring-primary hover:bg-gray-100 dark:bg-slate-800 dark:text-white dark:ring-white dark:hover:bg-slate-700;
+    }
+    .section-title {
+      @apply text-center mb-12;
+    }
+    .section-title h2 {
+      @apply text-3xl font-bold tracking-tight text-primary dark:text-white sm:text-4xl;
+    }
+    .section-title p {
+      @apply mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+    <div class="flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="flex h-full grow flex-col">
+            <header
+                class="border-b border-gray-200/50 dark:border-gray-700/50 px-4 md:px-10 py-4 sticky top-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md z-50">
+                <div class="mx-auto flex max-w-7xl items-center justify-between">
+                    <a class="flex items-center gap-3 text-gray-900 dark:text-white" href="#">
+                        <span class="material-symbols-outlined text-primary text-3xl">gavel</span>
+                        <span class="text-xl font-bold">Brice Wakap</span>
+                    </a>
+                    <nav class="hidden items-center gap-8 text-sm font-medium lg:flex">
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors active"
+                            href="#">Accueil</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
+                            href="#about">À propos</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
+                            href="#">Services</a>
+                            <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
+                            href="#news">Actualités</a>
+                        <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
+                            href="#contact">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <a class="hidden sm:inline-block btn btn-primary" href="#contact">Prendre rendez-vous</a>
+                        <button
+                            class="lg:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <section class="relative bg-white dark:bg-background-dark">
+                    <div
+                        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 py-24 lg:py-40 items-center">
+                        <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                            <p class="text-lg font-semibold text-primary dark:text-secondary">BRICE WAKAP, AVOCATE AU
+                                BARREAU DU CAMEROUN</p>
+                            <h1
+                                class="mt-4 text-4xl font-black tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+                                L'expertise juridique au service de vos droits.
+                            </h1>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-xl">
+                                Défense, conseil et accompagnement sur-mesure en droit des affaires, droit commercial et
+                                droit immobilier.
+                            </p>
+                            <div class="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
+                                <a class="btn btn-primary" href="#contact">Prendre rendez-vous</a>
+                                <a class="btn btn-secondary" href="#practice-areas">Explorer mes domaines</a>
+                            </div>
+                        </div>
+                        <div class="relative w-full max-w-md mx-auto lg:max-w-none">
+                            <div class="absolute inset-0 bg-primary/10 rounded-xl transform -rotate-3"></div>
+                            <img alt="Brice Wakap, avocate"
+                                class="relative rounded-xl shadow-2xl w-full h-auto object-cover aspect-[4/5]"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBinYPLHvnMfZZ0WAxtr7PnaWK3IdlSZm0BdzA7D7FMdZbQW2GVmhJZuiwdSMSc6wkLyOo0qRs7_3Od_hRaVHsIkEag6oYGHcInueJsQEXGKskWxXjKgF9BLSOvhZHsoc5-QiRnynjepTnT2khkaw6j7sKoAAajjhMcqFd61fU5phsdvbQxZM-AUC7mRZB96KFplM50vHupgz4ASMV_xYQafiQpRDAMb6culY98jaVjFETXe_eoUdx0483tlrfOFTmqTn9IMsOtTRdr"/>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 sm:py-28 bg-gray-50 dark:bg-slate-900" id="practice-areas">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div class="section-title">
+                            <h2>Domaines de pratique clés</h2>
+                            <p>Une expertise ciblée pour une défense efficace et des conseils stratégiques adaptés à vos
+                                besoins.</p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                            <div
+                                class="flex flex-col text-left p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                                <div
+                                    class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-6">
+                                    <span class="material-symbols-outlined text-3xl">business_center</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Droit des Sociétés</h3>
+                                <p class="text-gray-600 dark:text-gray-400 flex-grow">Conseils pour la création, la
+                                    fusion, l'acquisition et le suivi juridique quotidien de votre entreprise.</p>
+                                <a class="mt-6 font-semibold text-primary hover:underline" href="#">En savoir plus <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                            <div
+                                class="flex flex-col text-left p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                                <div
+                                    class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-6">
+                                    <span class="material-symbols-outlined text-3xl">gavel</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Contentieux Commercial
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 flex-grow">Défense de vos intérêts dans tous
+                                    types de litiges entre professionnels, de la négociation à la plaidoirie.</p>
+                                <a class="mt-6 font-semibold text-primary hover:underline" href="#">En savoir plus <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                            <div
+                                class="flex flex-col text-left p-8 bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                                <div
+                                    class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-6">
+                                    <span class="material-symbols-outlined text-3xl">real_estate_agent</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Droit Immobilier</h3>
+                                <p class="text-gray-600 dark:text-gray-400 flex-grow">Accompagnement dans vos
+                                    transactions, baux commerciaux, construction et litiges immobiliers.</p>
+                                <a class="mt-6 font-semibold text-primary hover:underline" href="#">En savoir plus <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 sm:py-28 bg-white dark:bg-background-dark" id="about">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div class="section-title">
+                            <h2>Pourquoi me choisir ?</h2>
+                            <p>Mon engagement repose sur quatre piliers fondamentaux pour garantir la protection de vos
+                                intérêts et la réussite de vos projets.</p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+                            <div class="text-center">
+                                <div
+                                    class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-3xl">military_tech</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Expertise Reconnue</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">Une connaissance approfondie et
+                                    constamment actualisée du droit pour des conseils stratégiques et pertinents.</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-3xl">groups</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Approche Personnalisée</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">Une relation de confiance et une écoute
+                                    attentive pour un service sur-mesure, adapté à votre situation unique.</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-3xl">lightbulb</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Pragmatisme &amp; Efficacité
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">Des solutions concrètes et efficaces,
+                                    toujours orientées vers l'atteinte rapide et favorable de vos objectifs.</p>
+                            </div>
+                            <div class="text-center">
+                                <div
+                                    class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 text-primary mx-auto mb-4">
+                                    <span class="material-symbols-outlined text-3xl">lock</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Confidentialité Absolue</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">Un respect scrupuleux du secret
+                                    professionnel pour une protection totale de vos informations sensibles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 sm:py-28 bg-gray-50 dark:bg-slate-900">
+                    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+                        <div class="section-title">
+                            <h2>Ce que disent mes clients</h2>
+                        </div>
+                        <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 md:p-12 text-center relative">
+                            <span
+                                class="material-symbols-outlined text-5xl text-primary/20 absolute top-6 left-8">format_quote</span>
+                            <img alt="Photo de M. Durand"
+                                class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-primary/20"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbU-bfMd9KifK4qtgRbKvleSp5csWcKcgc_gwa0nIOqXngpAeQIBK4pFR6ZT3FMNnRFh10nf5LXOWW5VIOwpTljT8e0tbxVfldnVg9xWk-EVECV3CzkQJZywQH0DTFORMTUFJjH12I3c_TkAFhIdqjyZY93Lwtbrz0tQ_ll4o2u7SXJb1jHtSXuEhPIeI5MBRcCxjMxlbQpAI7xKz3w33a6STOFeNerY952_bBXpxh18exkJN_cETiYZcZhjxCNXy5BNr02GcW3g7r" />
+                            <blockquote class="text-lg font-medium text-gray-700 dark:text-gray-300">
+                                "Maître Dubois a fait preuve d'une grande réactivité et d'un professionnalisme sans
+                                faille pour la création de ma société. Je me suis senti accompagné et en pleine
+                                confiance à chaque étape du processus."
+                            </blockquote>
+                            <cite class="mt-6 block font-semibold not-italic text-primary dark:text-secondary">— M.
+                                Durand, Gérant de start-up</cite>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-20 sm:py-28 bg-white dark:bg-background-dark" id="news">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div class="section-title">
+                            <h2>Actualités &amp; Analyses</h2>
+                            <p>Retrouvez mes dernières publications et analyses sur des sujets juridiques d'actualité.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <article
+                                class="group flex flex-col overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                                <div class="flex-shrink-0">
+                                    <img alt="Réforme du droit des contrats" class="h-48 w-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPL_D1aXueuXSi6ODahY32ptRBKNeG_phk4zn7zKdJZ_rvFnLANJKCjzs7S46B3EyCOdSBqK_hU893d8LGrMG6IpFF5ppyupiNWtroOSjb2Ia7AcdnD-U5m96J9Bf-419yqztnyDjHjngb4PbwNpvBlYakVyT-pGE-FLrI1kZLdQUYgX5Irxmdmq7ltlwv0noYmIe0PvCBJoEulRohfuccVvxiM1JH7cfsBB7WyXJzbCD6pqoxmqKfDElnhneZUpeOgkGw8hTlhixp" />
+                                </div>
+                                <div class="flex flex-1 flex-col justify-between bg-white dark:bg-slate-800 p-6">
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-primary uppercase tracking-wider">Analyse</p>
+                                        <a class="mt-2 block" href="#">
+                                            <p
+                                                class="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                                La nouvelle réforme du droit des contrats : ce qui change pour votre
+                                                entreprise</p>
+                                            <p class="mt-3 text-base text-gray-600 dark:text-gray-400">Une synthèse des
+                                                points clés et des impacts pratiques.</p>
+                                        </a>
+                                    </div>
+                                    <div class="mt-6 flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                        <span class="material-symbols-outlined text-base mr-1.5">calendar_month</span>
+                                        <span>12 mars 2024</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article
+                                class="group flex flex-col overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                                <div class="flex-shrink-0">
+                                    <img alt="Négociation bail commercial" class="h-48 w-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPL_D1aXueuXSi6ODahY32ptRBKNeG_phk4zn7zKdJZ_rvFnLANJKCjzs7S46B3EyCOdSBqK_hU893d8LGrMG6IpFF5ppyupiNWtroOSjb2Ia7AcdnD-U5m96J9Bf-419yqztnyDjHjngb4PbwNpvBlYakVyT-pGE-FLrI1kZLdQUYgX5Irxmdmq7ltlwv0noYmIe0PvCBJoEulRohfuccVvxiM1JH7cfsBB7WyXJzbCD6pqoxmqKfDElnhneZUpeOgkGw8hTlhixp" />
+                                </div>
+                                <div class="flex flex-1 flex-col justify-between bg-white dark:bg-slate-800 p-6">
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-primary uppercase tracking-wider">Conseil</p>
+                                        <a class="mt-2 block" href="#">
+                                            <p
+                                                class="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                                Bail commercial : 5 pièges à éviter lors de la négociation</p>
+                                            <p class="mt-3 text-base text-gray-600 dark:text-gray-400">Focus sur les
+                                                clauses essentielles pour sécuriser votre implantation.</p>
+                                        </a>
+                                    </div>
+                                    <div class="mt-6 flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                        <span class="material-symbols-outlined text-base mr-1.5">calendar_month</span>
+                                        <span>28 février 2024</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <div
+                                class="flex items-center justify-center rounded-xl bg-gray-50 dark:bg-slate-900 border-2 border-dashed border-gray-300 dark:border-gray-700">
+                                <a class="btn btn-secondary" href="#">Voir toutes les actualités</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-primary" id="contact">
+                    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+                        <div class="text-center">
+                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Prêt à discuter de
+                                votre dossier ?</h2>
+                            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">Contactez-moi pour une première
+                                consultation confidentielle et évaluons ensemble la meilleure stratégie pour vous.</p>
+                        </div>
+                        <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+                            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 btn bg-white text-primary hover:bg-gray-200"
+                                href="#">Prendre rendez-vous en ligne</a>
+                            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 btn bg-white/10 text-white hover:bg-white/20"
+                                href="mailto:kamdaeva@gmail.com">
+                                <span class="material-symbols-outlined">mail</span>
+                                Envoyer un e-mail
+                            </a>
+                        </div>
+                        <div class="mt-10 text-center text-white">
+                            <p class="text-lg">Ou appelez-moi directement au :</p>
+                            <a class="text-3xl font-bold mt-2 inline-block hover:underline" href="tel:+237690551993">01
+                                23 45 67 89</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-slate-900 border-t border-gray-800">
+                <div class="mx-auto max-w-7xl px-6 py-5 lg:px-8">
+                    <p class="mt-1 text-center text-xs leading-5 text-gray-400">
+                        © 2024 BRICE WAKAP, Avocate. Tous droits réservés. |
+                        <a class="hover:underline hover:text-white" href="#">Mentions légales</a> |
+                        <a class="hover:underline hover:text-white" href="#">Politique de confidentialité</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
