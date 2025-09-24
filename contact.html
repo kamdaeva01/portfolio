@@ -134,7 +134,7 @@
                                 pour toute question que vous pourriez avoir.
                             </p>
                         </div>
-                        <form name="contact" method="POST" data-netlify="true" action="merci.html" class="space-y-6">
+                        <form name="contact" method="POST" data-netlify="true" id="contact-form" class="space-y-6">
                             <input type="hidden" name="form-name" value="contact" />
 
                             <input
@@ -158,7 +158,14 @@
                                 type="submit">
                                 <span class="truncate">Envoyer le message</span>
                             </button>
+
+                            <!-- Message de succès -->
+                            <p id="success-message"
+                                class="hidden mt-4 text-green-600 dark:text-green-400 font-semibold">
+                                Merci pour votre message ! Nous vous répondrons bientôt.
+                            </p>
                         </form>
+
 
 
 
@@ -256,7 +263,7 @@
         });
     </script>
     <!-- Script Formulaire -->
-    <!-- <script>
+    <script>
         const form = document.getElementById("contact-form");
         const successMessage = document.getElementById("success-message");
 
@@ -276,7 +283,8 @@
                 })
                 .catch((error) => alert("Une erreur est survenue : " + error));
         });
-    </script> -->
+    </script>
+
 
 
 </body>
