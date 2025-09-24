@@ -268,22 +268,23 @@
         const successMessage = document.getElementById("success-message");
 
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Empêche l’envoi classique
+            event.preventDefault();
 
-            // Création de l’envoi Netlify
             const formData = new FormData(form);
 
             fetch("/", {
                 method: "POST",
-                body: formData
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
             })
                 .then(() => {
-                    successMessage.classList.remove("hidden"); // Affiche le message
-                    form.reset(); // Vide le formulaire
+                    successMessage.classList.remove("hidden");
+                    form.reset();
                 })
-                .catch((error) => alert("Une erreur est survenue : " + error));
+                .catch((error) => alert("Erreur : " + error));
         });
     </script>
+
 
 
 
