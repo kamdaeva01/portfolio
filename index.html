@@ -10,8 +10,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;family=Lato:wght@400;700&amp;display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <title>Brice Wakap - Avocate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Wakap chongang Brice - Avocate</title>
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -83,7 +85,7 @@
                 <div class="mx-auto flex max-w-7xl items-center justify-between">
                     <a class="flex items-center gap-3 text-gray-900 dark:text-white" href="#">
                         <span class="material-symbols-outlined text-primary text-3xl">gavel</span>
-                        <span class="text-xl font-bold">Brice Wakap</span>
+                        <span class="text-xl font-bold">Wakap chongang Brice</span>
                     </a>
                     <nav class="hidden items-center gap-8 text-sm font-medium lg:flex">
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors active"
@@ -91,9 +93,9 @@
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="about.html">À propos</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
-                            href="services.html">Services</a>
+                            href="services.html">Domaines</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
-                            href="#news">Actualités</a>
+                            href="blog.html">Actualités</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary dark:hover:text-primary transition-colors"
                             href="contact.html">Contact</a>
                     </nav>
@@ -105,9 +107,9 @@
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
                             href="about.html">À propos</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
-                            href="services.html">Services</a>
+                            href="services.html">Domaines</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
-                            href="#news">Actualités</a>
+                            href="blog.html">Actualités</a>
                         <a class="text-gray-700 dark:text-gray-300 hover:underline hover:text-primary transition-colors"
                             href="contact.html">Contact</a>
                     </div>
@@ -248,7 +250,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="py-20 sm:py-28 bg-gray-50 dark:bg-slate-900">
+                <!-- <section class="py-20 sm:py-28 bg-gray-50 dark:bg-slate-900">
                     <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
                         <div class="section-title">
                             <h2>Ce que disent mes clients</h2>
@@ -266,6 +268,88 @@
                             </blockquote>
                             <cite class="mt-6 block font-semibold not-italic text-primary dark:text-secondary">— M.
                                 Durand, Gérant de start-up</cite>
+                        </div>
+                    </div>
+                </section> -->
+                <!-- Section Témoignages -->
+                <section class="py-20 sm:py-28 bg-gray-50 dark:bg-slate-900">
+                    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+                        <div class="section-title text-center mb-12">
+                            <h2>Ce que disent mes clients</h2>
+                        </div>
+
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <div
+                                        class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 md:p-12 text-center relative">
+                                        <span
+                                            class="material-symbols-outlined text-5xl text-primary/20 absolute top-6 left-8">format_quote</span>
+                                        <img alt="Photo de M. Durand"
+                                            class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-primary/20"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbU-bfMd9KifK4qtgRbKvleSp5csWcKcgc_gwa0nIOqXngpAeQIBK4pFR6ZT3FMNnRFh10nf5LXOWW5VIOwpTljT8e0tbxVfldnVg9xWk-EVECV3CzkQJZywQH0DTFORMTUFJjH12I3c_TkAFhIdqjyZY93Lwtbrz0tQ_ll4o2u7SXJb1jHtSXuEhPIeI5MBRcCxjMxlbQpAI7xKz3w33a6STOFeNerY952_bBXpxh18exkJN_cETiYZcZhjxCNXy5BNr02GcW3g7r" />
+                                        <blockquote class="text-lg font-medium text-gray-700 dark:text-gray-300">
+                                            "Maître Dubois a fait preuve d'une grande réactivité et d'un
+                                            professionnalisme sans faille pour la
+                                            création de ma société. Je me suis senti accompagné et en pleine confiance à
+                                            chaque étape du processus."
+                                        </blockquote>
+                                        <cite
+                                            class="mt-6 block font-semibold not-italic text-primary dark:text-secondary">—
+                                            M. Durand, Gérant de
+                                            start-up</cite>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div
+                                        class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 md:p-12 text-center relative">
+                                        <span
+                                            class="material-symbols-outlined text-5xl text-primary/20 absolute top-6 left-8">format_quote</span>
+                                        <img alt="Photo de Mme Leroy"
+                                            class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-primary/20"
+                                            src="https://randomuser.me/api/portraits/women/44.jpg" />
+                                        <blockquote class="text-lg font-medium text-gray-700 dark:text-gray-300">
+                                            "Un accompagnement juridique clair et précis. J’ai enfin trouvé un avocat
+                                            qui prend vraiment le temps
+                                            d’expliquer et de rassurer."
+                                        </blockquote>
+                                        <cite
+                                            class="mt-6 block font-semibold not-italic text-primary dark:text-secondary">—
+                                            Mme Leroy, Chef
+                                            d’entreprise</cite>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="swiper-slide">
+                                    <div
+                                        class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 md:p-12 text-center relative">
+                                        <span
+                                            class="material-symbols-outlined text-5xl text-primary/20 absolute top-6 left-8">format_quote</span>
+                                        <img alt="Photo de M. Bernard"
+                                            class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-primary/20"
+                                            src="https://randomuser.me/api/portraits/men/32.jpg" />
+                                        <blockquote class="text-lg font-medium text-gray-700 dark:text-gray-300">
+                                            "Disponibilité, écoute et efficacité ! Je recommande vivement pour tout
+                                            accompagnement juridique."
+                                        </blockquote>
+                                        <cite
+                                            class="mt-6 block font-semibold not-italic text-primary dark:text-secondary">—
+                                            M. Bernard, Artisan</cite>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pagination -->
+                            <div class="swiper-pagination mt-6"></div>
+
+                            <!-- Flèches -->
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
                         </div>
                     </div>
                 </section>
@@ -343,15 +427,14 @@
                             <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 btn bg-white text-primary hover:bg-gray-200"
                                 href="contact.html">Prendre rendez-vous en ligne</a>
                             <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 btn bg-white/10 text-white hover:bg-white/20"
-                                href="mailto:kamdaeva@gmail.com">
+                                href="mailto:wachobri@yahoo.fr>">
                                 <span class="material-symbols-outlined">mail</span>
                                 Envoyer un e-mail
                             </a>
                         </div>
                         <div class="mt-10 text-center text-white">
                             <p class="text-lg">Ou appelez-moi directement au :</p>
-                            <a class="text-3xl font-bold mt-2 inline-block hover:underline" href="tel:+237690551993">01
-                                23 45 67 89</a>
+                            <a class="text-3xl font-bold mt-2 inline-block hover:underline" href="tel:+237673645252">673 64 52 52</a>
                         </div>
                     </div>
                 </section>
@@ -359,7 +442,7 @@
             <footer class="bg-slate-900 border-t border-gray-800">
                 <div class="mx-auto max-w-7xl px-6 py-5 lg:px-8">
                     <p class="mt-1 text-center text-xs leading-5 text-gray-400">
-                        © 2025 BRICE WAKAP, Avocat. Tous droits réservés. |
+                        © 2025 Wakap chongang Brice, Avocat. Tous droits réservés. |
                         <a class="hover:underline hover:text-white" href="#">Mentions légales</a> |
                         <a class="hover:underline hover:text-white" href="#">Politique de confidentialité</a>
                     </p>
@@ -374,6 +457,23 @@
 
         menuBtn.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
     </script>
 </body>

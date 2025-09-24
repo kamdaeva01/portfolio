@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Legal Solutions - Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0B5A9A",
+                        "background-light": "#F8F9FA",
+                        "background-dark": "#121212",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1E1E1E",
+                        "text-light": "#333333",
+                        "text-dark": "#E0E0E0",
+                        "accent-light": "#EAEFF5",
+                        "accent-dark": "#2A2A2A",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.375rem", "lg": "0.625rem", "xl": "0.875rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-border {
+            border-image-slice: 1;
+            border-width: 2px;
+            border-image-source: linear-gradient(to right, #0B5A9A, #0B5A9A);
+        }
+
+        .dark .gradient-border {
+            border-image-source: linear-gradient(to right, #0B5A9A, #0B5A9A);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="flex min-h-screen flex-col">
+        <header
+            class="sticky top-0 z-50 w-full bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md shadow-sm">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex h-20 items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="h-12 w-12 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-blue-600 text-white shadow-md">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L1 9l4 1.5V17h2v-6h2v6h2v-6h2v6h2V10.5L23 9z"></path>
+                            </svg>
+                        </div>
+                        <h1
+                            class="text-2xl font-extrabold bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
+                            Legal Solutions
+                        </h1>
+                    </div>
+
+                    <!-- Nav -->
+                    <nav class="hidden items-center gap-8 md:flex">
+                        <a class="relative text-sm font-medium text-text-light/80 dark:text-text-dark/70 transition-colors hover:text-primary after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-primary hover:after:w-full after:transition-all"
+                            href="#home">Home</a>
+                        <a class="relative text-sm font-medium text-text-light/80 dark:text-text-dark/70 transition-colors hover:text-primary after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-primary hover:after:w-full after:transition-all"
+                            href="#about">About</a>
+                        <a class="text-sm font-medium text-primary" href="#services">Services</a>
+                        <a class="relative text-sm font-medium text-text-light/80 dark:text-text-dark/70 transition-colors hover:text-primary after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-primary hover:after:w-full after:transition-all"
+                            href="#contact">Contact</a>
+                    </nav>
+
+                    <!-- Call to action -->
+                    <button
+                        class="hidden md:flex min-w-[140px] items-center justify-center rounded-full h-11 px-6 bg-gradient-to-r from-primary to-blue-600 text-white text-sm font-bold shadow-lg hover:scale-105 transition-transform duration-300">
+                        Consultation
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section Services -->
+        <section id="services" class="py-20 sm:py-28 relative">
+            <div
+                class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-blue-50 to-white dark:from-background-dark dark:via-gray-900 dark:to-background-dark">
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-14">
+                    <h2
+                        class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                        Our Legal Services
+                    </h2>
+                    <p class="mt-4 text-lg text-text-light/70 dark:text-text-dark/70">
+                        Tailored solutions from experienced attorneys to protect your rights and business interests.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div
+                        class="group relative flex flex-col overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                        <div class="relative h-52 overflow-hidden">
+                            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                src="https://picsum.photos/600/400?grayscale" alt="Business law">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </div>
+                        <div class="flex-grow p-6">
+                            <h3 class="text-xl font-bold text-text-light dark:text-white">Droit des affaires</h3>
+                            <p class="mt-3 text-sm text-text-light/70 dark:text-text-dark/70">
+                                Contracts, governance, dispute resolution – legal expertise to support your business
+                                growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="flex-grow">
+            <section id="home" class="py-16 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Welcome to Legal Solutions</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Your trusted partner for comprehensive legal services. We are dedicated to providing expert
+                            advice and effective solutions for your legal needs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="py-16 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Our Legal Services</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            We offer a comprehensive range of legal services tailored to meet your specific needs. Our
+                            team of experienced attorneys is dedicated to providing effective and efficient solutions.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+                            onclick="scrollToSection('business-law')">
+                            <div class="relative h-48">
+                                <img alt="Abstract representation of business law" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXdlw_63yedBOlJ9Wc55Vfk7jZ2VfNEUaoENhV0yuzt0sQRFm88KB-6m7iQA6kqtbJbYOSOUBU8Tdc5JhZ3iHrXs8tKfGdGPXR-b0CQoS8iChAZDec9aXdaEZjuNC18iMSKXyXhoz16JRt9AO0QryqabVDJa0fKsAjKsXEDnXFLGqVsKyDZj64rLH73GaSdjtFGibpn25jiwWUhm5x7vz7iIiWHhTHoIo774JjL2VKJGnSsWZO4AtVyrOFVcE1NihZzcVpAIpuKCWa" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <div class="flex-grow p-6">
+                                <h3 class="text-xl font-bold text-text-light dark:text-white">Droit des affaires</h3>
+                                <p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/60">
+                                    Expert legal advice for businesses of all sizes, including contract drafting,
+                                    corporate governance, and dispute resolution.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+                            onclick="scrollToSection('civil-law')">
+                            <div class="relative h-48">
+                                <img alt="Abstract representation of civil law" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSCdXenKEykmrQYFqD1jIemyMp8v9l4mi7s5nHvxymN501kRCCcnxmMbnP_jt-RB0ZjORC9kSegmhjfkgYOpWoFvZ-LYsMWtEI4iIw6umiEM2Qsm6qTrD8EmEi7bVhJp1lU5YdXMcvTlIPiuKjSksq_NqfpW6aQeqRKd2oIfH9rGNs0cd7csANDNiiwxfHTMDKWoDj1-c5iEvrAuqDrGrbWS33jt9idbw8r0fLPgmO3K-HLaHKOkLT2F90ILc1Md9YJ-4zFlLn9jla" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <div class="flex-grow p-6">
+                                <h3 class="text-xl font-bold text-text-light dark:text-white">Droit civil</h3>
+                                <p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/60">
+                                    Comprehensive legal support for civil matters, including property disputes, personal
+                                    injury claims, and contract enforcement.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+                            onclick="scrollToSection('employment-law')">
+                            <div class="relative h-48">
+                                <img alt="Abstract representation of employment law" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd-5BjyIQqKjlncBi1-hEznFg841i_w5cGZAKCW-16BQCLhRc1aZI7quCx5gwhFM1NtCbau0Qt4qXMyJCaN6sMKzqd-fOe5hCQZDTGwXb35Ao_6QyCZhheRapJzWEweayiYQbHm7vjcXtsujTPeF3YKn-NghyVlVVJ83yRLn6K1JjDFi8LY9o8Y4rciCLptGk6LRKzJ4fkV2czTC74BMF36eWbTklelLHdPa5YApMB6fVphvboYwogZdyn2aYMy3xF_VvCHy7jue6y" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <div class="flex-grow p-6">
+                                <h3 class="text-xl font-bold text-text-light dark:text-white">Droit du travail</h3>
+                                <p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/60">
+                                    Specialized legal services for employment-related issues, including wrongful
+                                    termination, discrimination, and contract negotiations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
+                            onclick="scrollToSection('family-law')">
+                            <div class="relative h-48">
+                                <img alt="Abstract representation of family law" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOHos8z-b35OmoaDXkDs1VkKCOdWM5YbLVM-Zt5H0upEeC-xYA_bvuK-bY2-Hop-bGCcn3vxINyLZKEDAfUw1MXY6POa_iiSuruzufJbLzPDI9UU3vLjbpxlY9uIFqTV5AltXxnLQYQnDPilEKvfDXU8H0IvoCz4tyTVqYRF76fjyXC88QIBH6z9lZ8hr09GOd_x0GdhFuo-GKbg0izaG0gGK4IePWz249nIJokOir7dfyYhC4L4uDlm-uqc9OHAVSpd-19afIeJXW" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <div class="flex-grow p-6">
+                                <h3 class="text-xl font-bold text-text-light dark:text-white">Droit de la famille</h3>
+                                <p class="mt-2 text-sm text-text-light/80 dark:text-text-dark/60">
+                                    Compassionate and effective legal representation for family law matters, including
+                                    divorce, child custody, and adoption.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="business-law" class="py-16 sm:py-24 bg-accent-light dark:bg-accent-dark">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Droit des affaires</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Expert legal advice for businesses of all sizes, including contract drafting, corporate
+                            governance, and dispute resolution.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="flex flex-col gap-6">
+                            <p class="text-lg text-text-light/90 dark:text-text-dark/80">
+                                Our business law services cover a wide spectrum of corporate needs. We assist startups
+                                in their formation, help established companies navigate complex regulations, and provide
+                                strategic counsel for mergers, acquisitions, and intellectual property protection. Our
+                                goal is to safeguard your business interests and foster growth through sound legal
+                                guidance.
+                            </p>
+                            <ul
+                                class="list-disc list-inside text-lg text-text-light/90 dark:text-text-dark/80 space-y-2">
+                                <li>Contract Drafting and Review</li>
+                                <li>Corporate Formation and Governance</li>
+                                <li>Mergers & Acquisitions</li>
+                                <li>Intellectual Property Law</li>
+                                <li>Commercial Litigation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="space-y-4 rounded-xl bg-surface-light dark:bg-surface-dark p-8 shadow-lg">
+                                <h3 class="text-2xl font-bold text-center text-text-light dark:text-white">Inquire about
+                                    Business Law</h3>
+                                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    <div>
+                                        <label for="business-name"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Business
+                                            Name</label>
+                                        <input type="text" id="business-name"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="Your Business Name" />
+                                    </div>
+                                    <div>
+                                        <label for="contact-name"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Contact
+                                            Name</label>
+                                        <input type="text" id="contact-name"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="Your Name" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="business-email"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Email
+                                        Address</label>
+                                    <input type="email" id="business-email"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="you@example.com" />
+                                </div>
+                                <div>
+                                    <label for="business-phone"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Phone
+                                        Number</label>
+                                    <input type="tel" id="business-phone"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="+1 123 456 7890" />
+                                </div>
+                                <div>
+                                    <label for="business-message"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Message</label>
+                                    <textarea id="business-message" rows="4"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="Tell us about your legal needs..."></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full min-w-[120px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="civil-law" class="py-16 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Droit civil</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Comprehensive legal support for civil matters, including property disputes, personal injury
+                            claims, and contract enforcement.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="flex flex-col gap-6">
+                            <p class="text-lg text-text-light/90 dark:text-text-dark/80">
+                                Our civil law practice addresses a wide range of legal issues that affect individuals
+                                and their rights. Whether you are dealing with a contractual disagreement, seeking
+                                compensation for injuries, or navigating property disputes, our experienced attorneys
+                                will provide clear, actionable advice and robust representation to achieve the best
+                                possible outcome for you.
+                            </p>
+                            <ul
+                                class="list-disc list-inside text-lg text-text-light/90 dark:text-text-dark/80 space-y-2">
+                                <li>Personal Injury Claims</li>
+                                <li>Property Law</li>
+                                <li>Contract Disputes</li>
+                                <li>Debt Collection</li>
+                                <li>Civil Litigation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="space-y-4 rounded-xl bg-surface-light dark:bg-surface-dark p-8 shadow-lg">
+                                <h3 class="text-2xl font-bold text-center text-text-light dark:text-white">Inquire about
+                                    Civil Law</h3>
+                                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    <div>
+                                        <label for="civil-name"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Your
+                                            Name</label>
+                                        <input type="text" id="civil-name"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="Your Full Name" />
+                                    </div>
+                                    <div>
+                                        <label for="civil-email"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Email
+                                            Address</label>
+                                        <input type="email" id="civil-email"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="you@example.com" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="civil-phone"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Phone
+                                        Number</label>
+                                    <input type="tel" id="civil-phone"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="+1 123 456 7890" />
+                                </div>
+                                <div>
+                                    <label for="civil-message"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Message</label>
+                                    <textarea id="civil-message" rows="4"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="Describe your civil law concern..."></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full min-w-[120px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="employment-law" class="py-16 sm:py-24 bg-accent-light dark:bg-accent-dark">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Droit du travail</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Specialized legal services for employment-related issues, including wrongful termination,
+                            discrimination, and contract negotiations.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="flex flex-col gap-6">
+                            <p class="text-lg text-text-light/90 dark:text-text-dark/80">
+                                Navigating the complexities of employment law can be challenging for both employees and
+                                employers. Our team offers expert guidance on issues such as unfair dismissal, workplace
+                                discrimination, harassment, wage disputes, and the drafting or review of employment
+                                contracts. We strive to ensure fair treatment and compliance with labor laws for all
+                                parties.
+                            </p>
+                            <ul
+                                class="list-disc list-inside text-lg text-text-light/90 dark:text-text-dark/80 space-y-2">
+                                <li>Wrongful Termination</li>
+                                <li>Discrimination and Harassment</li>
+                                <li>Wage and Hour Disputes</li>
+                                <li>Employment Contract Review</li>
+                                <li>Workplace Investigations</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="space-y-4 rounded-xl bg-surface-light dark:bg-surface-dark p-8 shadow-lg">
+                                <h3 class="text-2xl font-bold text-center text-text-light dark:text-white">Inquire about
+                                    Employment Law</h3>
+                                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    <div>
+                                        <label for="employment-name"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Your
+                                            Name</label>
+                                        <input type="text" id="employment-name"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="Your Full Name" />
+                                    </div>
+                                    <div>
+                                        <label for="employment-email"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Email
+                                            Address</label>
+                                        <input type="email" id="employment-email"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="you@example.com" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="employment-phone"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Phone
+                                        Number</label>
+                                    <input type="tel" id="employment-phone"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="+1 123 456 7890" />
+                                </div>
+                                <div>
+                                    <label for="employment-message"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Message</label>
+                                    <textarea id="employment-message" rows="4"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="Describe your employment law issue..."></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full min-w-[120px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="family-law" class="py-16 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Droit de la famille</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Compassionate and effective legal representation for family law matters, including divorce,
+                            child custody, and adoption.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="flex flex-col gap-6">
+                            <p class="text-lg text-text-light/90 dark:text-text-dark/80">
+                                Family law matters are often deeply personal and emotionally charged. Our compassionate
+                                attorneys provide dedicated support and expert legal counsel for divorce proceedings,
+                                child custody and visitation arrangements, spousal support, property division, adoption,
+                                and prenuptial agreements. We aim to resolve these sensitive issues with fairness and
+                                dignity.
+                            </p>
+                            <ul
+                                class="list-disc list-inside text-lg text-text-light/90 dark:text-text-dark/80 space-y-2">
+                                <li>Divorce and Separation</li>
+                                <li>Child Custody and Support</li>
+                                <li>Spousal Support (Alimony)</li>
+                                <li>Prenuptial and Postnuptial Agreements</li>
+                                <li>Adoption</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <form class="space-y-4 rounded-xl bg-surface-light dark:bg-surface-dark p-8 shadow-lg">
+                                <h3 class="text-2xl font-bold text-center text-text-light dark:text-white">Inquire about
+                                    Family Law</h3>
+                                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                    <div>
+                                        <label for="family-name"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Your
+                                            Name</label>
+                                        <input type="text" id="family-name"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="Your Full Name" />
+                                    </div>
+                                    <div>
+                                        <label for="family-email"
+                                            class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Email
+                                            Address</label>
+                                        <input type="email" id="family-email"
+                                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                            placeholder="you@example.com" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="family-phone"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Phone
+                                        Number</label>
+                                    <input type="tel" id="family-phone"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="+1 123 456 7890" />
+                                </div>
+                                <div>
+                                    <label for="family-message"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Message</label>
+                                    <textarea id="family-message" rows="4"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="Describe your family law matter..."></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full min-w-[120px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-16 sm:py-24 bg-background-light dark:bg-background-dark">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            About Us</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Learn more about our firm, our values, and our commitment to serving our clients with
+                            integrity and excellence.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="flex flex-col gap-6">
+                            <p class="text-lg text-text-light/90 dark:text-text-dark/80">
+                                At Legal Solutions, we pride ourselves on a foundation of expertise, integrity, and
+                                client-focused service. Our team of dedicated legal professionals brings a wealth of
+                                experience across various practice areas, ensuring that you receive the highest quality
+                                representation. We are committed to understanding your unique situation and crafting
+                                tailored legal strategies to achieve your objectives.
+                            </p>
+                            <p class="text-lg text-text-light/90 dark:text-text-dark/80">
+                                Our mission is to provide accessible, effective, and compassionate legal services. We
+                                believe in building strong, lasting relationships with our clients, built on trust and
+                                mutual respect. Whether you are facing a complex business challenge, a personal legal
+                                matter, or require ongoing counsel, we are here to guide you every step of the way.
+                            </p>
+                        </div>
+                        <div class="relative">
+                            <img alt="Modern office space with natural light" class="rounded-xl shadow-lg"
+                                src="[IMAGE_PLACEHOLDER_4]" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-16 sm:py-24 bg-accent-light dark:bg-accent-dark">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-text-light dark:text-white">
+                            Contact Us</h2>
+                        <p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/60">
+                            Get in touch with our team today to discuss your legal needs or to schedule a consultation.
+                        </p>
+                    </div>
+                    <div class="max-w-2xl mx-auto">
+                        <form class="space-y-4 rounded-xl bg-surface-light dark:bg-surface-dark p-8 shadow-lg">
+                            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                <div>
+                                    <label for="general-name"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Your
+                                        Name</label>
+                                    <input type="text" id="general-name"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="Your Full Name" />
+                                </div>
+                                <div>
+                                    <label for="general-email"
+                                        class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Email
+                                        Address</label>
+                                    <input type="email" id="general-email"
+                                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                        placeholder="you@example.com" />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="general-phone"
+                                    class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Phone
+                                    Number</label>
+                                <input type="tel" id="general-phone"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                    placeholder="+1 123 456 7890" />
+                            </div>
+                            <div>
+                                <label for="general-subject"
+                                    class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Subject</label>
+                                <input type="text" id="general-subject"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                    placeholder="Inquiry Type" />
+                            </div>
+                            <div>
+                                <label for="general-message"
+                                    class="block text-sm font-medium text-text-light/70 dark:text-text-dark/60">Message</label>
+                                <textarea id="general-message" rows="6"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-text-dark/30 dark:border-text-dark/50 dark:text-white"
+                                    placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full min-w-[120px] items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+                    <div class="flex items-center gap-2">
+                        <p class="text-sm text-slate-500 dark:text-slate-400">© 2024 Legal Solutions. All rights
+                            reserved.</p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                            href="#">Privacy Policy</a>
+                        <a class="text-sm text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors"
+                            href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
